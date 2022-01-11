@@ -10,16 +10,17 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <repo>https://github.com/chemerisuk/cordova-plugin-firebase-inappmessaging</repo>
     <issue>https://github.com/chemerisuk/cordova-plugin-firebase-inappmessaging/issues</issue>
 
-    <dependency id="cordova-plugin-firebase-analytics" version="~6.0.0"/>
+    <dependency id="cordova-plugin-firebase-analytics" url="https://github.com/OutSystems/cordova-plugin-firebase-analytics.git#5.0.0-OS2"/>
 
     <engines>
-        <engine name="cordova" version=">=10.0.0"/>
-        <engine name="cordova-android" version=">=9.0.0"/>
-        <engine name="cordova-ios" version=">=6.0.0"/>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-android" version=">=8.1.0"/>
+        <engine name="cordova-ios" version=">=5.1.1"/>
     </engines>
 
+
     <platform name="ios">
-        <preference name="IOS_FIREBASE_INAPPMESSAGING_VERSION" default="~> 8.2.0"/>
+        <preference name="IOS_FIREBASE_POD_VERSION" default="~> 8.8.0"/>
 
         <podspec>
             <config>
@@ -32,7 +33,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform>
 
     <platform name="android">
-        <preference name="ANDROID_FIREBASE_INAPPMESSAGING_VERSION" default="20.0.+"/>
+        <preference name="ANDROID_FIREBASE_MESSAGING_VERSION" default="22.0.+"/>
+        <preference name="ANDROIDX_CORE_VERSION" default="1.6.+"/>
 
         <framework src="com.google.firebase:firebase-inappmessaging-display:$ANDROID_FIREBASE_INAPPMESSAGING_VERSION" />
     </platform>
