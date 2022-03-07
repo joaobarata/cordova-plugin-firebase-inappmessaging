@@ -20,7 +20,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
 
     <platform name="ios">
-        <hook type="before_plugin_install" src="hooks/updatePodSpec.js"/>
+        <!-- <hook type="before_plugin_install" src="hooks/updatePodSpec.js"/>-->
         <preference name="IOS_FIREBASE_INAPPMESSAGING_VERSION" default="~> 8.2.0"/>
 
         <podspec>
